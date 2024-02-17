@@ -2,19 +2,25 @@
 Q.1 Write a menu-driven program to implement arithmetic operations such as +, -, *, /, and % using UDF, switch case, and looping. Make sure that the program is endless until a certain letter is pressed.
 */
 #include<stdio.h>
-	int add (int x , int y){
-		return x+y;
+	int add (int x , int y)
+	{
+		printf("add = %d",x+y);
+
 	}
-		int sub (int x , int y){
-		return x-y;
+	int sub (int x , int y)
+	{
+		printf("sub = %d",x-y);
 	}
-	void multi (int x, int y){
+	void multi (int x, int y)
+	{
 		printf("multi = %d",x*y);
 	}
-		void div (int x, int y){
+	void div (int x, int y)
+	{
 		printf("div = %d",x/y);
 	}
-		void modulo (int x, int y){
+	void modulo (int x, int y)
+	{
 		printf("modulo = %d",x%y);
 	}
 
@@ -34,7 +40,7 @@ int s,a,b;
 		printf("enter selected number :");
 		scanf("%d",&s);
 		
-		if(s>=1 && s<5){
+		if(s>=1 && s<6){
 			
 			printf("enter any value  A :");
 			scanf("%d",&a);
@@ -44,11 +50,11 @@ int s,a,b;
 			switch(s){
 				
 				case 1:
-					printf("sum = %d",add(a,b));
+					add(a,b);
 					break;
 					
 				case 2:
-					printf("sub = %d",sub(a,b));
+					sub(a,b);
 					break;
 					
 				case 3:
